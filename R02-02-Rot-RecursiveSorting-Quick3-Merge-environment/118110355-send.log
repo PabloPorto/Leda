@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-09-29T23:28:04.133-0300</date>
+  <logger>PAULO PABLO PORTO DE ASSIS</logger>
+  <level>FINE</level>
+  <message>File 118110355-PAULO PABLO PORTO DE ASSIS.zip was received. It was sent by PAULO PABLO PORTO DE ASSIS from IP 192.168.25.7 at 29-09-2020 23*28*04</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-09-30T01:51:34.747-0300</date>
+  <logger>PAULO PABLO PORTO DE ASSIS</logger>
+  <level>FINE</level>
+  <message>File 118110355-PAULO PABLO PORTO DE ASSIS.zip was received. It was sent by PAULO PABLO PORTO DE ASSIS from IP 192.168.25.7 at 30-09-2020 01*51*34</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-09-30T09:58:46.592-0300</date>
+  <logger>PAULO PABLO PORTO DE ASSIS</logger>
+  <level>FINE</level>
+  <message>File 118110355-PAULO PABLO PORTO DE ASSIS.zip was received. It was sent by PAULO PABLO PORTO DE ASSIS from IP 192.168.25.7 at 30-09-2020 09*58*46</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-10-02T02:31:10.260-0300</date>
+  <logger>PAULO PABLO PORTO DE ASSIS</logger>
+  <level>FINE</level>
+  <message>File 118110355-PAULO PABLO PORTO DE ASSIS.zip was received. It was sent by PAULO PABLO PORTO DE ASSIS from IP 192.168.25.10 at 02-10-2020 02*31*10</message>
+</record>
