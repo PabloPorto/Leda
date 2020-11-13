@@ -37,3 +37,23 @@
   <level>FINE</level>
   <message>File 118110355-PAULO PABLO PORTO DE ASSIS.zip was received. It was sent by PAULO PABLO PORTO DE ASSIS from IP 192.168.25.7 at 22-10-2020 01*17*04</message>
 </record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-10-25T00:02:40.883-0300</date>
+  <logger>PAULO PABLO PORTO DE ASSIS</logger>
+  <level>FINE</level>
+  <message>File 118110355-PAULO PABLO PORTO DE ASSIS.zip was received. It was sent by PAULO PABLO PORTO DE ASSIS from IP 192.168.25.7 at 25-10-2020 00*02*40</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-10-25T00:05:49.704-0300</date>
+  <logger>PAULO PABLO PORTO DE ASSIS</logger>
+  <level>FINE</level>
+  <message>File 118110355-PAULO PABLO PORTO DE ASSIS.zip was received. It was sent by PAULO PABLO PORTO DE ASSIS from IP 192.168.25.7 at 25-10-2020 00*05*49</message>
+</record>

@@ -2,11 +2,14 @@ package adt.queue;
 
 import adt.stack.Stack;
 import adt.stack.StackImpl;
+import adt.stack.StackOverflowException;
+import adt.stack.StackUnderflowException;
 
 public class QueueUsingStack<T> implements Queue<T> {
 
 	private Stack<T> stack1;
 	private Stack<T> stack2;
+	private int count;
 
 	public QueueUsingStack(int size) {
 		stack1 = new StackImpl<T>(size);
@@ -15,32 +18,79 @@ public class QueueUsingStack<T> implements Queue<T> {
 
 	@Override 
 	public void enqueue(T element) throws QueueOverflowException {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Not implemented yet!");
+		
+		if (stack1.isFull())
+			throw new QueueOverflowException();
+
+		try {
+			this.stack1.push(element);
+			this.count++;
+		} catch (StackOverflowException e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override
 	public T dequeue() throws QueueUnderflowException {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Not implemented yet!");
+		T result = null;
+		if(stack1.isEmpty()) {
+			throw new QueueUnderflowException();
+		}
+		else {
+			for (int i = 0; i < count; i++) {
+				try {
+					stack2.push(stack1.pop());
+				} catch (StackOverflowException | StackUnderflowException e) {
+					e.printStackTrace(); 
+				}
+				try {
+					result = stack2.pop();
+				} catch (StackUnderflowException e) {
+					e.printStackTrace();
+				}
+			}
+			this.count --;
+			for (int i = 0; i < count; i++) {
+				try {
+					stack1.push(stack2.pop());
+				} catch (StackOverflowException | StackUnderflowException e) {
+					e.printStackTrace();
+				}
+			}
+			
+			return result;
+		}
 	}
 
 	@Override
 	public T head() {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Not implemented yet!");
+		T result = null;
+		if(stack1.isEmpty()) {
+			return null;
+		}
+		
+		else {
+			for (int i = 0; i < count; i++) {
+				try {
+					stack2.push(stack1.pop());
+				} catch (StackOverflowException | StackUnderflowException e) {
+					e.printStackTrace();
+				}
+				result = stack2.top();
+			}
+			
+			return result;
+		}
 	}
 
 	@Override
 	public boolean isEmpty() {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Not implemented yet!");
+		return stack1.isEmpty();
 	}
 
 	@Override
 	public boolean isFull() {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Not implemented yet!");
+		return stack1.isFull();
 	}
 
 }
